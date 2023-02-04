@@ -58,24 +58,36 @@
 #define MY_LANBR    LA(LBKT)      // remaped <
 #define MY_RANBR    LA(RBKT)      // remaped >
 
-#define HYP_ESC   LC(LS(LA(ESC)))
-#define HYP_Q     LC(LS(LA(Q)))
-#define HYP_W     LC(LS(LA(W)))
-#define HYP_E     LC(LS(LA(E)))
-#define HYP_R     LC(LS(LA(R)))
-#define HYP_T     LC(LS(LA(T)))
-#define HYP_A     LC(LS(LA(A)))
-#define HYP_S     LC(LS(LA(S)))
-#define HYP_D     LC(LS(LA(D)))
-#define HYP_F     LC(LS(LA(F)))
-#define HYP_G     LC(LS(LA(G)))
-#define HYP_Z     LC(LS(LA(Z)))
-#define HYP_X     LC(LS(LA(X)))
-#define HYP_C     LC(LS(LA(C)))
-#define HYP_V     LC(LS(LA(V)))
-#define HYP_B     LC(LS(LA(B)))
+#define HYPER(key) LC(LS(LA(LG(key))))
+#define HYP_ESC    HYPER(ESC)
+#define HYP_Q      HYPER(Q)
+#define HYP_W      HYPER(W)
+#define HYP_E      HYPER(E)
+#define HYP_R      HYPER(R)
+#define HYP_T      HYPER(T)
+#define HYP_A      HYPER(A)
+#define HYP_S      HYPER(S)
+#define HYP_D      HYPER(D)
+#define HYP_F      HYPER(F)
+#define HYP_G      HYPER(G)
+#define HYP_Z      HYPER(Z)
+#define HYP_X      HYPER(X)
+#define HYP_C      HYPER(C)
+#define HYP_V      HYPER(V)
+#define HYP_B      HYPER(B)
 
 / {
+    behaviors {
+        esc_cmdtab: esc_cmdtab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "esc_cmdtab";
+            #binding-cells = <0>;
+            bindings = <&mt LALT ESC>, <&kp TAB>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+    };
+
     macros {
         zm_screenshot: zm_screenshot {
             label = "zm_screenshot";
@@ -170,7 +182,7 @@
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
                 &none         &none   &none  &none        &none           &none                            &none          &none            &none           &none      &none          &none
-                &mt LALT TAB  &kp Q   &kp W  &kp E        &kp R           &kp T                            &kp Y          &kp U            &kp I           &kp O      &kp P          &kp BSPC
+                &esc_cmdtab   &kp Q   &kp W  &kp E        &kp R           &kp T                            &kp Y          &kp U            &kp I           &kp O      &kp P          &kp BSPC
                 &kp LSHFT     &kp A   &kp S  &kp D        &kp F           &kp G                            &kp H          &kp J            &kp K           &kp L      &kp SEMI       &kp APOS
                 &td_m1_ctrl   &kp Z   &kp X  &kp C        &kp V           &kp B      &none       &none     &kp N          &kp M            &kp COMMA       &kp DOT    &kp EQUAL      &kp ENTER
                                       &none  &lt M1 BSLH  &kp SPACE       &kp LGUI                         &mo M4         &mo M3           &mt LCTRL FSLH  &none
@@ -188,7 +200,7 @@
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
                 &trans       &trans     &trans     &trans     &trans     &trans                         &trans   &trans  &trans    &trans  &trans    &trans
-                &kp ESC      &kp HYP_Q  &kp HYP_W  &kp HYP_E  &kp HYP_R  &kp HYP_T                      &kp F10  &kp F1  &kp F2    &kp F3  &trans    &trans
+                &kp TAB      &kp HYP_Q  &kp HYP_W  &kp HYP_E  &kp HYP_R  &kp HYP_T                      &kp F10  &kp F1  &kp F2    &kp F3  &trans    &trans
                 &trans       &kp HYP_A  &kp HYP_S  &kp HYP_D  &kp HYP_F  &kp HYP_G                      &kp F11  &kp F4  &kp F5    &kp F6  &trans    &trans
                 &trans       &kp HYP_Z  &kp HYP_X  &kp HYP_C  &kp HYP_V  &kp HYP_B  &trans      &trans  &kp F12  &kp F7  &kp F8    &kp F9  &trans    &trans
                                         &trans     &trans     &trans     &trans                         &trans   &trans  &trans    &trans
@@ -224,7 +236,7 @@
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
                 &trans  &trans       &trans       &trans        &trans        &trans                              &trans        &trans        &trans         &trans        &trans        &trans
-                &trans  &kp MY_DOLL  &kp MY_HASH  &kp SQUOTE    &kp DQUOTE    &kp MY_AT                           &kp MY_RCURL  &kp MY_LCURL  &kp MY_EXMARK  &kp MY_QMARK  &kp CIR_FLEX  &kp DEL_WORD
+                &trans  &kp MY_DOLL  &kp MY_HASH  &kp SQUOTE    &kp DQUOTE    &kp MY_AT                           &kp MY_RCURL  &kp MY_LCURL  &kp MY_EXMARK  &kp MY_QMARK  &kp CIR_FLEX  &trans
                 &trans  &trans       &trans       &kp MY_DOT    &kp MY_COM    &kp MY_MIN                          &kp MY_RSQBR  &kp MY_LSQBR  &kp MY_PLS     &kp MY_ASTER  &kp MY_EQUAL  &kp MY_PRC
                 &trans  &trans       &trans       &kp MY_SMCOL  &kp MY_COLON  &kp MY_UNDER  &trans        &trans  &kp MY_RBRKT  &kp MY_LBRKT  &kp MY_RANBR   &kp MY_LANBR  &kp MY_BSLH   &trans
                                      &trans       &trans        &trans        &trans                              &trans        &trans        &trans         &trans
@@ -242,9 +254,9 @@
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans                        &trans        &trans      &trans     &trans     &trans     &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                        &trans        &trans      &kp UP     &trans     &trans     &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                        &trans        &kp LEFT    &kp DOWN   &kp RIGHT  &trans     &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &trans      &trans     &trans      &trans     &trans
+                &trans  &trans  &trans  &trans  &trans  &trans                        &trans        &kp PG_UP   &kp UP     &trans     &trans     &trans
+                &trans  &trans  &trans  &trans  &trans  &trans                        &kp HOME      &kp LEFT    &kp DOWN   &kp RIGHT  &kp END    &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &kp PG_DN   &trans     &trans     &trans     &trans
                                 &trans  &trans  &trans  &trans                        &trans        &trans      &trans     &trans
             >;
 
