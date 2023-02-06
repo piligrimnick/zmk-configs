@@ -175,7 +175,7 @@
         };
 
         // Media combos
-        combo_base_left {
+        combo_play_pause {
             timeout-ms = <50>;
             key-positions = <36 37>;
             bindings = <&kp C_PP>;
