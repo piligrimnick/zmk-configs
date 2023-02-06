@@ -14,7 +14,6 @@
 #define M3   3
 #define M4   4
 
-#define EXPAND      LC(LA(E))     // expand window
 #define GO_DSK_1    LC(N1)        // show desktop 1
 #define MV_DKS_1    LC(LS(N1))    // move window to desktop 1
 #define GO_DSK_2    LC(N2)        // show desktop 2
@@ -23,8 +22,21 @@
 #define MV_DKS_3    LC(LS(N3))    // move window to desktop 3
 #define SCREENSH    LG(LS(N4))    // macos screenshot tool (area)
 
-#define HALF_LEFT   LA(LS(LEFT))  // move window left half
-#define HALF_RIGHT  LA(LS(RIGHT)) // move window right half
+// window manager
+#define W_MAN_W     LC(LA(W))
+#define W_MAN_E     LC(LA(E))
+#define W_MAN_R     LC(LA(R))
+#define W_MAN_T     LC(LA(T))
+#define W_MAN_A     LC(LA(A))
+#define W_MAN_S     LC(LA(S))
+#define W_MAN_D     LC(LA(D))
+#define W_MAN_F     LC(LA(F))
+#define W_MAN_G     LC(LA(G))
+#define W_MAN_Z     LC(LA(Z))
+#define W_MAN_X     LC(LA(X))
+#define W_MAN_C     LC(LA(C))
+#define W_MAN_V     LC(LA(V))
+#define W_MAN_B     LC(LA(B))
 
 #define DEL_WORD    LA(BSPC)      // delete word back
 
@@ -162,6 +174,13 @@
             bindings = <&to BASE>;
         };
 
+        // Media combos
+        combo_base_left {
+            timeout-ms = <50>;
+            key-positions = <36 37>;
+            bindings = <&kp C_PP>;
+        };
+
         // CAPS
         combo_caps {
             timeout-ms = <150>;
@@ -217,11 +236,11 @@
             // |          |          |          |          |          |          |          |  |          |          |          |          |          |          |          |
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
-                &trans     &trans  &trans         &trans      &trans          &trans                        &trans  &trans     &trans     &trans     &trans     &trans
-                &kp LCTRL  &trans  &trans         &kp EXPAND  &zm_screenshot  &trans                        &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans     &trans
-                &trans     &trans  &kp HALF_LEFT  &trans      &kp HALF_RIGHT  &trans                        &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans     &trans
-                &trans     &trans  &trans         &trans      &trans          &trans  &trans        &trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0  &trans
-                                   &trans         &trans      &trans          &trans                        &trans  &trans     &trans     &trans
+                &trans        &trans          &trans          &trans         &trans          &trans                              &trans  &trans     &trans     &trans     &trans     &trans
+                &kp C_VOL_UP  &zm_screenshot  &kp W_MAN_W     &kp W_MAN_E    &kp W_MAN_R     &kp C_BRI_UP                        &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans     &trans
+                &kp C_VOL_DN  &kp W_MAN_A     &kp W_MAN_S     &kp W_MAN_D    &kp W_MAN_F     &kp C_BRI_DN                        &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans     &trans
+                &trans        &kp W_MAN_Z     &kp W_MAN_X     &kp W_MAN_C    &kp W_MAN_V     &kp C_BRI_MAX   &trans      &trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0  &trans
+                                              &trans          &trans         &trans          &trans                              &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -253,8 +272,8 @@
             // |          |          |          |          |          |          |          |  |          |          |          |          |          |          |       |
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans                        &trans        &trans      &trans     &trans     &trans     &kp DEL
-                &trans  &trans  &trans  &trans  &trans  &trans                        &trans        &kp PG_UP   &kp UP     &trans     &trans     &trans
+                &trans  &trans  &trans  &trans  &trans  &trans                        &trans        &trans      &trans     &trans     &trans     &trans
+                &trans  &trans  &trans  &trans  &trans  &trans                        &trans        &kp PG_UP   &kp UP     &trans     &trans     &kp DEL
                 &trans  &trans  &trans  &trans  &trans  &trans                        &kp HOME      &kp LEFT    &kp DOWN   &kp RIGHT  &kp END    &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &kp PG_DN   &trans     &trans     &trans     &trans
                                 &trans  &trans  &trans  &trans                        &trans        &trans      &trans     &trans
