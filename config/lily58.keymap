@@ -180,6 +180,16 @@
             key-positions = <36 37>;
             bindings = <&kp C_PP>;
         };
+        combo_media_next {
+            timeout-ms = <50>;
+            key-positions = <36 12>;
+            bindings = <&kp C_NEXT>;
+        };
+        combo_media_prev {
+            timeout-ms = <50>;
+            key-positions = <36 24>;
+            bindings = <&kp C_PREV>;
+        };
 
         // CAPS
         combo_caps {
