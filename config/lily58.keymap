@@ -192,7 +192,7 @@
         };
 
         // TAB
-        combo_caps {
+        combo_tab {
             timeout-ms = <75>;
             key-positions = <12 13>;
             bindings = <&kp TAB>;
