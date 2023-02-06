@@ -191,6 +191,12 @@
             bindings = <&kp C_PREV>;
         };
 
+        // TAB
+        combo_caps {
+            timeout-ms = <75>;
+            key-positions = <12 13>;
+            bindings = <&kp TAB>;
+        };
         // CAPS
         combo_caps {
             timeout-ms = <150>;
