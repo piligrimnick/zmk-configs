@@ -62,6 +62,7 @@
 #define MY_BSLH     LS(N0)        // remaped backslash
 
 #define CIR_FLEX    LA(N6)        // remaped ^
+#define MY_AND      LA(N7)        // remaped &
 
 #define MY_LCURL    LS(LBKT)      // remaped {
 #define MY_RCURL    LS(RBKT)      // remaped }
@@ -279,7 +280,7 @@
             bindings = <
                 &trans  &trans        &trans        &trans        &trans         &trans                              &trans        &trans        &trans         &trans         &trans         &trans
                 &trans  &trans        &trans        &trans        &kp MY_LCURL   &kp MY_RCURL                        &kp MY_AT     &kp MY_HASH   &kp MY_COLON   &kp MY_SMCOL   &kp CIR_FLEX   &trans
-                &trans  &kp MY_EQUAL  &trans        &trans        &kp MY_LSQBR   &kp MY_RSQBR                        &kp MY_MIN    &kp DQUOTE    &kp SQUOTE     &kp MY_ASTER   &kp MY_EXMARK  &kp MY_DOLL
+                &trans  &kp MY_EQUAL  &trans        &kp MY_AND    &kp MY_LSQBR   &kp MY_RSQBR                        &kp MY_MIN    &kp DQUOTE    &kp SQUOTE     &kp MY_ASTER   &kp MY_EXMARK  &kp MY_DOLL
                 &trans  &kp MY_PRC    &kp MY_LANBR  &kp MY_RANBR  &kp MY_LBRKT   &kp MY_RBRKT  &trans        &trans  &kp MY_UNDER  &kp MY_PLS    &kp MY_COM     &kp MY_DOT     &kp MY_QMARK   &trans
                                       &trans        &trans        &trans         &trans                              &trans        &trans        &kp MY_BSLH    &trans
             >;
