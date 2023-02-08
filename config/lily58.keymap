@@ -145,7 +145,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_shift_caps";
             #binding-cells = <0>;
-            tapping-term-ms = <TD_TIMEOUT>;
+            tapping-term-ms = <TD_TIMEOUT_LONG>;
             bindings = <&kp LSHFT>, <&kp CAPS>;
         };
     };
