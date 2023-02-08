@@ -6,7 +6,7 @@
 
 // timeout for tap-dance
 #define TD_TIMEOUT         150
-#define TD_TIMEOUT_LONG    TD_TIMEOUT*2
+#define TD_TIMEOUT_LONG    300
 
 #define BASE 0
 #define M1   1
