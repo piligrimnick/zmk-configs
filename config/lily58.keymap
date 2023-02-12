@@ -305,9 +305,9 @@
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
                 &trans  &trans  &trans   &trans     &trans   &trans                        &trans     &trans      &trans     &trans     &trans     &trans
-                &trans  &trans  &trans   &kp F13    &trans   &trans                        &trans     &kp PG_UP   &kp UP     &trans     &trans     &kp DEL
-                &trans  &trans  &kp F15  &kp F14    &kp F16  &trans                        &kp HOME   &kp LEFT    &kp DOWN   &kp RIGHT  &kp END    &kp F18
-                &trans  &trans  &trans   &trans     &trans   &trans  &trans        &trans  &trans     &kp PG_DN   &trans     &trans     &trans     &kp F17
+                &trans  &trans  &trans   &kp F13    &trans   &trans                        &kp F18    &kp PG_UP   &kp UP     &trans     &trans     &kp DEL
+                &trans  &trans  &kp F15  &kp F14    &kp F16  &trans                        &kp HOME   &kp LEFT    &kp DOWN   &kp RIGHT  &kp END    &trans
+                &trans  &trans  &trans   &trans     &trans   &trans  &trans        &trans  &kp F17    &kp PG_DN   &trans     &trans     &trans     &trans
                                 &trans   &kp GRAVE  &trans   &trans                        &trans     &trans      &trans     &trans
             >;
 
