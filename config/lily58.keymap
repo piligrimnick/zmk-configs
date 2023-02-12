@@ -224,11 +224,11 @@
             // |          |          |          |          |          |          |          |  |          |          |          |          |          |          |       |
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
-                &none           &none   &none  &none        &none           &none                            &none          &none            &none           &none      &none          &none
-                &esc_cmdtab     &kp Q   &kp W  &kp E        &kp R           &kp T                            &kp Y          &kp U            &kp I           &kp O      &kp P          &kp BSPC
-                &td_shift_caps  &kp A   &kp S  &kp D        &kp F           &kp G                            &kp H          &kp J            &kp K           &kp L      &kp SEMI       &kp APOS
-                &td_m1_ctrl     &kp Z   &kp X  &kp C        &kp V           &kp B      &none       &none     &kp N          &kp M            &kp COMMA       &kp DOT    &kp EQUAL      &kp ENTER
-                                        &none  &lt M1 BSLH  &kp SPACE       &kp LGUI                         &mo M4         &mo M3           &mt LCTRL FSLH  &none
+                &none           &none   &none  &none         &none           &none                            &none          &none            &none           &none      &none          &none
+                &esc_cmdtab     &kp Q   &kp W  &kp E         &kp R           &kp T                            &kp Y          &kp U            &kp I           &kp O      &kp P          &kp BSPC
+                &td_shift_caps  &kp A   &kp S  &kp D         &kp F           &kp G                            &kp H          &kp J            &kp K           &kp L      &kp SEMI       &kp APOS
+                &td_m1_ctrl     &kp Z   &kp X  &kp C         &kp V           &kp B      &none       &none     &kp N          &kp M            &kp COMMA       &kp DOT    &kp EQUAL      &kp ENTER
+                                        &none  &lt M1 GRAVE  &kp SPACE       &kp LGUI                         &mo M4         &mo M3           &mt LCTRL FSLH  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
