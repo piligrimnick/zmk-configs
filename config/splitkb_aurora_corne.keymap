@@ -245,17 +245,17 @@
         combo_rgb_eff {
             timeout-ms = <75>;
             key-positions = <0 4>;
-            bindings = <&RGB_EFF>;
+            bindings = <&rgb_ug RGB_EFF>;
         };
         combo_rgb_br_increase {
             timeout-ms = <75>;
             key-positions = <0 3>;
-            bindings = <&RGB_BRI>;
+            bindings = <&rgb_ug RGB_BRI>;
         };
         combo_rgb_br_decrease {
             timeout-ms = <75>;
             key-positions = <0 2>;
-            bindings = <&RGB_BRD>;
+            bindings = <&rgb_ug RGB_BRD>;
         };
     };
 
