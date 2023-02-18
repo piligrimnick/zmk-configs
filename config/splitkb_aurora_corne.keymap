@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/rgb.h>
 
 // workaround for underglow with nice_nano_v2
 // see https://github.com/zmkfirmware/zmk/issues/885
@@ -246,6 +246,11 @@
             timeout-ms = <75>;
             key-positions = <0 1>;
             bindings = <&kp TAB>;
+        };
+        combo_rgb_tog {
+            timeout-ms = <75>;
+            key-positions = <0 2>;
+            bindings = <&rgb_ug RGB_TOG>;
         };
         combo_ep_tog {
             timeout-ms = <75>;
