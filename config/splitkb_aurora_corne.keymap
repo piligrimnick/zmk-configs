@@ -212,18 +212,6 @@
             bindings = <&bt BT_CLR>;
         };
 
-        // Layers toggle 
-        // combo_base_right {
-        //     timeout-ms = <150>;
-        //     key-positions = <11 54>;
-        //     bindings = <&to BASE>;
-        // };
-        // combo_base_left {
-        //     timeout-ms = <150>;
-        //     key-positions = <53 0>;
-        //     bindings = <&to BASE>;
-        // };
-
         // Media combos
         combo_play_pause {
             timeout-ms = <50>;
@@ -247,32 +235,28 @@
             key-positions = <0 1>;
             bindings = <&kp TAB>;
         };
+
+        // RGB
         combo_rgb_tog {
             timeout-ms = <75>;
-            key-positions = <0 2>;
+            key-positions = <0 5>;
             bindings = <&rgb_ug RGB_TOG>;
         };
-        combo_ep_tog {
-            timeout-ms = <75>;
-            key-positions = <0 5>;
-            bindings = <&ext_power EP_TOG>;
-        };
-        combo_ep_on {
+        combo_rgb_eff {
             timeout-ms = <75>;
             key-positions = <0 4>;
-            bindings = <&ext_power EP_ON>;
+            bindings = <&RGB_EFF>;
         };
-        combo_ep_off {
+        combo_rgb_br_increase {
             timeout-ms = <75>;
             key-positions = <0 3>;
-            bindings = <&ext_power EP_OFF>;
+            bindings = <&RGB_BRI>;
         };
-        // // CAPS
-        // combo_caps {
-        //     timeout-ms = <150>;
-        //     key-positions = <24 53>;
-        //     bindings = <&kp CAPS>;
-        // };
+        combo_rgb_br_decrease {
+            timeout-ms = <75>;
+            key-positions = <0 2>;
+            bindings = <&RGB_BRD>;
+        };
     };
 
     keymap {
