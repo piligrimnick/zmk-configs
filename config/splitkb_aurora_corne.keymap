@@ -240,22 +240,32 @@
         combo_rgb_tog {
             timeout-ms = <75>;
             key-positions = <0 5>;
+            layers = <M1>;
             bindings = <&rgb_ug RGB_TOG>;
         };
         combo_rgb_eff {
             timeout-ms = <75>;
             key-positions = <0 4>;
+            layers = <M1>;
             bindings = <&rgb_ug RGB_EFF>;
         };
         combo_rgb_br_increase {
             timeout-ms = <75>;
             key-positions = <0 3>;
+            layers = <M1>;
             bindings = <&rgb_ug RGB_BRI>;
         };
         combo_rgb_br_decrease {
             timeout-ms = <75>;
             key-positions = <0 2>;
+            layers = <M1>;
             bindings = <&rgb_ug RGB_BRD>;
+        };
+        combo_rgb_hui_increase {
+            timeout-ms = <75>;
+            key-positions = <0 1>;
+            layers = <M1>;
+            bindings = <&rgb_ug RGB_HUI>;
         };
     };
 
