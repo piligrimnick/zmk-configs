@@ -244,20 +244,20 @@
         // TAB
         combo_tab {
             timeout-ms = <75>;
-            key-positions = <0 2>;
+            key-positions = <0 1>;
             bindings = <&kp TAB>;
         };
-        combo_tab {
+        combo_ep_tog {
             timeout-ms = <75>;
             key-positions = <0 5>;
             bindings = <&ext_power EP_TOG>;
         };
-        combo_tab {
+        combo_ep_on {
             timeout-ms = <75>;
             key-positions = <0 4>;
             bindings = <&ext_power EP_ON>;
         };
-        combo_tab {
+        combo_ep_off {
             timeout-ms = <75>;
             key-positions = <0 3>;
             bindings = <&ext_power EP_OFF>;
