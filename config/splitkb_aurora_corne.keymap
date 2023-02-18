@@ -196,48 +196,48 @@
         compatible = "zmk,combos";
 
         // BT combos
-        combo_bt_sel_0 {
-            timeout-ms = <50>;
-            key-positions = <37 53>; // Lower + 6
-            bindings = <&bt BT_SEL 0>;
-        };
-        combo_bt_sel_1 {
-            timeout-ms = <50>;
-            key-positions = <38 53>; // Lower + 7
-            bindings = <&bt BT_SEL 1>;
-        };
+        // combo_bt_sel_0 {
+        //     timeout-ms = <50>;
+        //     key-positions = <37 53>; // Lower + 6
+        //     bindings = <&bt BT_SEL 0>;
+        // };
+        // combo_bt_sel_1 {
+        //     timeout-ms = <50>;
+        //     key-positions = <38 53>; // Lower + 7
+        //     bindings = <&bt BT_SEL 1>;
+        // };
         combo_bt_clr {
             timeout-ms = <50>;
-            key-positions = <51 53>; // Lower + LGUI
+            key-positions = <36 38>; // Lower + LGUI
             bindings = <&bt BT_CLR>;
         };
 
         // Layers toggle 
-        combo_base_right {
-            timeout-ms = <150>;
-            key-positions = <11 54>;
-            bindings = <&to BASE>;
-        };
-        combo_base_left {
-            timeout-ms = <150>;
-            key-positions = <53 0>;
-            bindings = <&to BASE>;
-        };
+        // combo_base_right {
+        //     timeout-ms = <150>;
+        //     key-positions = <11 54>;
+        //     bindings = <&to BASE>;
+        // };
+        // combo_base_left {
+        //     timeout-ms = <150>;
+        //     key-positions = <53 0>;
+        //     bindings = <&to BASE>;
+        // };
 
         // Media combos
         combo_play_pause {
             timeout-ms = <50>;
-            key-positions = <36 37>;
+            key-positions = <24 25>;
             bindings = <&kp C_PP>;
         };
         combo_media_next {
             timeout-ms = <50>;
-            key-positions = <36 12>;
+            key-positions = <24 0>;
             bindings = <&kp C_NEXT>;
         };
         combo_media_prev {
             timeout-ms = <50>;
-            key-positions = <36 24>;
+            key-positions = <24 13>;
             bindings = <&kp C_PREV>;
         };
 
