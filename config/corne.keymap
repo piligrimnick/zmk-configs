@@ -4,6 +4,10 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 
+// workaround for underglow with nice_nano_v2
+// see https://github.com/zmkfirmware/zmk/issues/885
+#include <../boards/shields/nibble/boards/nice_nano.overlay>
+
 // timeout for tap-dance
 #define TD_TIMEOUT         150
 #define TD_TIMEOUT_LONG    300
