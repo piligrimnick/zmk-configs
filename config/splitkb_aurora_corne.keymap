@@ -263,7 +263,7 @@
         };
         combo_rgb_hui_increase {
             timeout-ms = <75>;
-            key-positions = <0 1>;
+            key-positions = <0 16>;
             layers = <M1>;
             bindings = <&rgb_ug RGB_HUI>;
         };
