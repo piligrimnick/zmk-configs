@@ -237,34 +237,64 @@
         };
 
         // RGB
-        combo_rgb_tog {
+        combo_rgb_tog_l { // left
             timeout-ms = <75>;
             key-positions = <0 5>;
             layers = <M1>;
             bindings = <&rgb_ug RGB_TOG>;
         };
-        combo_rgb_eff {
+        combo_rgb_tog_r { // right
+            timeout-ms = <75>;
+            key-positions = <11 6>;
+            layers = <M3>;
+            bindings = <&rgb_ug RGB_TOG>;
+        };
+        combo_rgb_eff_l { // left
             timeout-ms = <75>;
             key-positions = <0 4>;
             layers = <M1>;
             bindings = <&rgb_ug RGB_EFF>;
         };
-        combo_rgb_br_increase {
+        combo_rgb_eff_r { // right
+            timeout-ms = <75>;
+            key-positions = <11 7>;
+            layers = <M3>;
+            bindings = <&rgb_ug RGB_EFF>;
+        };
+        combo_rgb_br_increase_l { // left
             timeout-ms = <75>;
             key-positions = <0 3>;
             layers = <M1>;
             bindings = <&rgb_ug RGB_BRI>;
         };
-        combo_rgb_br_decrease {
+        combo_rgb_br_increase_r { // right
+            timeout-ms = <75>;
+            key-positions = <11 8>;
+            layers = <M3>;
+            bindings = <&rgb_ug RGB_BRI>;
+        };
+        combo_rgb_br_decrease_l { // left
             timeout-ms = <75>;
             key-positions = <0 2>;
             layers = <M1>;
             bindings = <&rgb_ug RGB_BRD>;
         };
-        combo_rgb_hui_increase {
+        combo_rgb_br_decrease_r { // right
+            timeout-ms = <75>;
+            key-positions = <11 9>;
+            layers = <M3>;
+            bindings = <&rgb_ug RGB_BRD>;
+        };
+        combo_rgb_hui_increase_l { // left
             timeout-ms = <75>;
             key-positions = <0 16>;
             layers = <M1>;
+            bindings = <&rgb_ug RGB_HUI>;
+        };
+        combo_rgb_hui_increase_r { // right
+            timeout-ms = <75>;
+            key-positions = <11 19>;
+            layers = <M3>;
             bindings = <&rgb_ug RGB_HUI>;
         };
     };
