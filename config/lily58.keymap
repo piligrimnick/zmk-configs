@@ -99,7 +99,7 @@
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
-        grave_bslh: grave_bslh {
+        m1_grave_bslh: m1_grave_bslh {
             compatible = "zmk,behavior-mod-morph";
             label = "grave_bslh";
             #binding-cells = <0>;
@@ -122,12 +122,26 @@
         };
     };
     behaviors {
-        td_m1_ctrl: td_m1_ctrl {
+        td_F22_M2: td_F22_M2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "td_m1_ctrl";
+            label = "td_F22_M2";
             #binding-cells = <0>;
             tapping-term-ms = <TD_TIMEOUT_LONG>;
-            bindings = <&mo M2>, <&kp LCTRL>;
+            bindings = <&kp F22>, <&mo M2>;
+        };
+        td_F23_M3: td_F23_M3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_F23_M3";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TIMEOUT_LONG>;
+            bindings = <&kp F23>, <&mo M3>;
+        };
+        td_F24_M4: td_F24_M4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_F24_M4";
+            #binding-cells = <0>;
+            tapping-term-ms = <TD_TIMEOUT_LONG>;
+            bindings = <&kp F24>, <&mo M4>;
         };
         td_dsk_1: td_dsk_1 {
             compatible = "zmk,behavior-tap-dance";
@@ -232,11 +246,11 @@
             // |          |          |          |          |          |          |          |  |          |          |          |          |          |          |       |
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
-                &none           &none   &none  &none         &none           &none                            &none          &none            &none           &none      &none          &none
-                &esc_cmdtab     &kp Q   &kp W  &kp E         &kp R           &kp T                            &kp Y          &kp U            &kp I           &kp O      &kp P          &kp BSPC
-                &td_shift_caps  &kp A   &kp S  &kp D         &kp F           &kp G                            &kp H          &kp J            &kp K           &kp L      &kp SEMI       &kp APOS
-                &td_m1_ctrl     &kp Z   &kp X  &kp C         &kp V           &kp B      &none       &none     &kp N          &kp M            &kp COMMA       &kp DOT    &kp EQUAL      &kp ENTER
-                                        &none  &grave_bslh  &kp SPACE       &kp LGUI                         &mo M4         &mo M3           &mt LCTRL FSLH  &none
+                &none           &none   &none  &none           &none           &none                            &none          &none            &none           &none      &none          &none
+                &esc_cmdtab     &kp Q   &kp W  &kp E           &kp R           &kp T                            &kp Y          &kp U            &kp I           &kp O      &kp P          &kp BSPC
+                &td_shift_caps  &kp A   &kp S  &kp D           &kp F           &kp G                            &kp H          &kp J            &kp K           &kp L      &kp SEMI       &kp APOS
+                &td_F22_M2      &kp Z   &kp X  &kp C           &kp V           &kp B      &none       &none     &kp N          &kp M            &kp COMMA       &kp DOT    &kp EQUAL      &kp ENTER
+                                        &none  &m1_grave_bslh  &kp SPACE       &kp LGUI                         &td_F24_M4     &td_F23_M3       &mt LCTRL FSLH  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
