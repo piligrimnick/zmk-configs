@@ -127,7 +127,7 @@
             label = "td_F21_M1";
             #binding-cells = <0>;
             tapping-term-ms = <TD_TIMEOUT_LONG>;
-            bindings = <&kp F22>, <&m1_grave_bslh>;
+            bindings = <&kp F21>, <&m1_grave_bslh>;
         };
         td_F22_M2: td_F22_M2 {
             compatible = "zmk,behavior-tap-dance";
@@ -257,7 +257,7 @@
                 &esc_cmdtab     &kp Q   &kp W  &kp E           &kp R           &kp T                            &kp Y          &kp U            &kp I            &kp O      &kp P          &kp BSPC
                 &td_shift_caps  &kp A   &kp S  &kp D           &kp F           &kp G                            &kp H          &kp J            &kp K            &kp L      &kp SEMI       &kp APOS
                 &td_F22_M2      &kp Z   &kp X  &kp C           &kp V           &kp B      &none       &none     &kp N          &kp M            &kp COMMA        &kp DOT    &kp FSLH       &kp ENTER
-                                        &none  &td_F21_M1      &kp SPACE       &kp LGUI                         &td_F24_M4     &td_F23_M3       &mt LCTRL EQUAL  &none
+                                        &none  &kp F21         &kp SPACE       &kp LGUI                         &td_F24_M4     &td_F23_M3       &mt LCTRL EQUAL  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
