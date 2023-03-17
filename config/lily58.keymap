@@ -122,12 +122,12 @@
         };
     };
     behaviors {
-        td_F21_M1: td_F21_M1 {
+        td_F21_F20: td_F21_F20 {
             compatible = "zmk,behavior-tap-dance";
-            label = "td_F21_M1";
+            label = "td_F21_F20";
             #binding-cells = <0>;
             tapping-term-ms = <TD_TIMEOUT_LONG>;
-            bindings = <&kp F21>, <&m1_grave_bslh>;
+            bindings = <&kp F21>, <&kp F20>;
         };
         td_F22_M2: td_F22_M2 {
             compatible = "zmk,behavior-tap-dance";
@@ -253,11 +253,11 @@
             // |          |          |          |          |          |          |          |  |          |          |          |          |          |          |       |
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
-                &none           &none  &none  &none    &none      &none                            &none       &none       &none            &none    &none     &none
-                &esc_cmdtab     &kp Q  &kp W  &kp E    &kp R      &kp T                            &kp Y       &kp U       &kp I            &kp O    &kp P     &kp BSPC
-                &td_shift_caps  &kp A  &kp S  &kp D    &kp F      &kp G                            &kp H       &kp J       &kp K            &kp L    &kp SEMI  &kp APOS
-                &td_F22_M2      &kp Z  &kp X  &kp C    &kp V      &kp B      &none       &none     &kp N       &kp M       &kp COMMA        &kp DOT  &kp FSLH  &kp ENTER
-                                       &none  &kp F21  &kp SPACE  &kp LGUI                         &td_F24_M4  &td_F23_M3  &mt LCTRL BSLH   &none
+                &none           &none  &none    &none    &none      &none                            &none    &none    &none      &none      &none     &none
+                &esc_cmdtab     &kp Q  &kp W    &kp E    &kp R      &kp T                            &kp Y    &kp U    &kp I      &kp O      &kp P     &kp BSPC
+                &td_shift_caps  &kp A  &kp S    &kp D    &kp F      &kp G                            &kp H    &kp J    &kp K      &kp L      &kp SEMI  &kp APOS
+                &td_F22_M2      &kp Z  &kp X    &kp C    &kp V      &kp B      &none       &none     &kp N    &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp ENTER
+                                       &kp F20  &kp F21  &kp SPACE  &kp LGUI                         &kp F24  &kp F23  &kp BSLH   &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
