@@ -182,15 +182,20 @@
     combos {
         compatible = "zmk,combos";
 
+        combo_out_tog {
+            timeout-ms = <50>;
+            key-positions = <37 53>;
+            bindings = <&out OUT_TOG>;
+        };
         // BT combos
         combo_bt_sel_0 {
             timeout-ms = <50>;
-            key-positions = <37 53>; // Lower + 6
+            key-positions = <38 53>; // Lower + 6
             bindings = <&bt BT_SEL 0>;
         };
         combo_bt_sel_1 {
             timeout-ms = <50>;
-            key-positions = <38 53>; // Lower + 7
+            key-positions = <39 53>; // Lower + 7
             bindings = <&bt BT_SEL 1>;
         };
         combo_bt_clr {
