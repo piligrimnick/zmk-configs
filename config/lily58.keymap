@@ -219,17 +219,17 @@
         // Media combos
         combo_play_pause {
             timeout-ms = <50>;
-            key-positions = <36 37>;
+            key-positions = <17 29>;
             bindings = <&kp C_PP>;
         };
         combo_media_next {
             timeout-ms = <50>;
-            key-positions = <36 12>;
+            key-positions = <17 18>;
             bindings = <&kp C_NEXT>;
         };
         combo_media_prev {
             timeout-ms = <50>;
-            key-positions = <36 24>;
+            key-positions = <29 30>;
             bindings = <&kp C_PREV>;
         };
 
