@@ -205,16 +205,16 @@
         };
 
         // Layers toggle 
-        combo_base_right {
-            timeout-ms = <150>;
-            key-positions = <11 54>;
-            bindings = <&to BASE>;
-        };
-        combo_base_left {
-            timeout-ms = <150>;
-            key-positions = <53 0>;
-            bindings = <&to BASE>;
-        };
+        // combo_base_right {
+        //     timeout-ms = <150>;
+        //     key-positions = <11 54>;
+        //     bindings = <&to BASE>;
+        // };
+        // combo_base_left {
+        //     timeout-ms = <150>;
+        //     key-positions = <53 0>;
+        //     bindings = <&to BASE>;
+        // };
 
         // Media combos
         combo_play_pause {
