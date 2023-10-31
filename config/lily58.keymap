@@ -224,7 +224,7 @@
         };
         combo_media_next {
             timeout-ms = <50>;
-            key-positions = <4 17>;
+            key-positions = <5 17>;
             bindings = <&kp C_NEXT>;
         };
         combo_media_prev {
