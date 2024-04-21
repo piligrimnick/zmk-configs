@@ -91,11 +91,11 @@
 
 / {
     behaviors {
-        esc_cmdtab: esc_cmdtab {
+        m0_cmdtab: m0_cmdtab {
             compatible = "zmk,behavior-mod-morph";
-            label = "esc_cmdtab";
+            label = "m0_cmdtab";
             #binding-cells = <0>;
-            bindings = <&mt LALT ESC>, <&kp TAB>;
+            bindings = <&mt F20 ESC>, <&kp TAB>;
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
@@ -204,7 +204,7 @@
             bindings = <&bt BT_CLR>;
         };
 
-        // Layers toggle 
+        // Layers toggle
         // combo_base_right {
         //     timeout-ms = <150>;
         //     key-positions = <11 54>;
@@ -258,11 +258,11 @@
             // |          |          |          |          |          |          |          |  |          |          |          |          |          |          |       |
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
-                &kp N1          &kp N2 &kp N3   &kp N4   &kp N5     &kp N6                           &kp N7   &kp N8   &kp N9     &kp N0     &kp MINUS &kp EQUAL
-                &esc_cmdtab     &kp Q  &kp W    &kp E    &kp R      &kp T                            &kp Y    &kp U    &kp I      &kp O      &kp P     &kp BSPC
-                &kp LSHFT       &kp A  &kp S    &kp D    &kp F      &kp G                            &kp H    &kp J    &kp K      &kp L      &kp SEMI  &kp APOS
-                &td_F22_M2      &kp Z  &kp X    &kp C    &kp V      &kp B      &none       &none     &kp N    &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp LCTRL
-                                       &kp F20  &kp F21  &kp SPACE  &kp LGUI                         &kp F24  &kp F23  &kp LCTRL  &kp BSLH
+                &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6                           &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS   &kp EQUAL
+                &m0_cmdtab  &kp Q       &kp W       &kp E       &kp R       &kp T                            &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
+                &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G                            &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
+                &td_F22_M2  &kp Z       &kp X       &kp C       &kp V       &kp B      &none       &none     &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp LCTRL
+                                        &kp LALT    &kp F21     &kp SPACE   &kp LGUI                         &kp F24     &kp F23     &kp F25     &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
