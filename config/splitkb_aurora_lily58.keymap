@@ -139,7 +139,7 @@
                 &m0_cmdtab  &kp Q       &kp W       &kp E       &kp R       &kp T                            &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
                 &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G                            &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
                 &td_F22_M1  &kp Z       &kp X       &kp C       &kp V       &kp B      &none       &none     &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp LCTRL
-                                        &kp LALT    &fx_21      &kp SPACE   &kp LGUI                         &kp F24     &kp F23     &kp F19     &kp BSLH
+                                        &kp LALT    &kp F21     &kp SPACE   &kp LGUI                         &kp F24     &kp F23     &kp F19     &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
