@@ -151,17 +151,24 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
         // TAB
         combo_tab {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <14 28>;
             require-prior-idle-ms = <250>;
             bindings = <&kp TAB>;
         };
         // Globe
         combo_globe {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <15 28>;
             require-prior-idle-ms = <250>;
             bindings = <&kp GLOBE>;
+        };
+        // Enter
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <20 31>;
+            require-prior-idle-ms = <200>;
+            bindings = <&kp RET>;
         };
     };
 
