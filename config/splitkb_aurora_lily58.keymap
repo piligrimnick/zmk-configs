@@ -22,7 +22,7 @@
 
 #define KEYS_L LT5 LT4 LT3 LT2 LT1 LT0 LM4 LM3 LM2 LM1 LM0 LB5 LB4 LB3 LB2 LB1 LB0 LF5 LF4 LF3 LF2 LF1 LF0 LEC       // left-hand keys
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5 REC RF0 RF1 RF2 RF3 RF4 RF5   // right-hand keys
-#define KEYS_B LH1 RH3 LM5                                                                                           // both keys
+#define KEYS_B LH1 RH3 LM5 LH2                                                                                       // both keys
 
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) \
     ZMK_HOLD_TAP(NAME, \
@@ -179,7 +179,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_B)  // right-hand HRMs
             bindings = <
                 &kp N1      &kp N2       &kp N3       &kp N4       &kp N5       &kp N6                           &kp N7      &kp N8       &kp N9       &kp N0       &kp MINUS      &kp EQUAL
                 &m0_cmdtab  &kp Q        &kp W        &kp E        &kp R        &kp T                            &kp Y       &kp U        &kp I        &kp O        &kp P          &kp BSPC
-                &none       &hml LALT A  &hml LCTRL S &hml LSHFT D &hml LGUI F  &kp G                            &kp H       &hmr LGUI J  &hmr LSHFT K &hmr LCTRL L &hmr LALT SEMI &kp APOS
+                &F22        &hml LALT A  &hml LCTRL S &hml LSHFT D &hml LGUI F  &kp G                            &kp H       &hmr LGUI J  &hmr LSHFT K &hmr LCTRL L &hmr LALT SEMI &kp APOS
                 &mo M1      &kp Z        &kp X        &kp C        &kp V        &kp B      &kp LBKT    &kp RBKT  &kp N       &kp M        &kp COMMA    &kp DOT      &kp FSLH       &none
                                          &kp LALT     &kp F21      &kp SPACE    &kp LGUI                         &mo M4      &kp F23      &kp F19      &kp BSLH
             >;
