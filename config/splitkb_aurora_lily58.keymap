@@ -74,13 +74,13 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_B)  // right-hand HRMs
             tapping-term-ms = <TD_TIMEOUT_LONG>;
             bindings = <&kp F22>, <&mo M1>;
         };
-        // f22_hyp: f22_hyp {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "f22_hyp";
-        //     flavor = "tap-unless-interrupted";
-        //     tapping-term-ms = <1000>;
-        //     bindings = <&kp LS(LC(LA(LGUI)))>, <&kp F22>;
-        // };
+        f22_hyp: f22_hyp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "f22_hyp";
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <1000>;
+            bindings = <&kp LS(LC(LA(LGUI)))>, <&kp F22>;
+        };
     };
 
     macros {
@@ -188,7 +188,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_B)  // right-hand HRMs
                 &m0_cmdtab  &kp Q        &kp W        &kp E        &kp R        &kp T                            &kp Y       &kp U        &kp I        &kp O        &kp P          &kp BSPC
                 &none       &hml LALT A  &hml LCTRL S &hml LSHFT D &hml LGUI F  &kp G                            &kp H       &hmr LGUI J  &hmr LSHFT K &hmr LCTRL L &hmr LALT SEMI &kp APOS
                 &mo M1      &kp Z        &kp X        &kp C        &kp V        &kp B      &kp LBKT    &kp RBKT  &kp N       &kp M        &kp COMMA    &kp DOT      &kp FSLH       &none
-                                         &kp LALT     &kp F21      &kp SPACE    &kp LGUI                         &mo M4      &kp F23      &kp F19      &kp BSLH
+                                         &kp LALT     &f22_hyp     &kp SPACE    &kp LGUI                         &mo M4      &kp F23      &kp F19      &kp BSLH
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
