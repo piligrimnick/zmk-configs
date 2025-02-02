@@ -76,10 +76,11 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_B)  // right-hand HRMs
         };
         f22_hyp: f22_hyp {
             compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             label = "f22_hyp";
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <1000>;
-            bindings = <&kp LS(LC(LA(LGUI)))>, <&kp F22>;
+            bindings = <&kp RS(RC(RA(RGUI)))>, <&kp F22>;
         };
     };
 
