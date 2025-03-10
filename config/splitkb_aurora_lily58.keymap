@@ -178,6 +178,13 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_B)  // right-hand HRMs
             require-prior-idle-ms = <200>;
             bindings = <&kp RET>;
         };
+        // Globe
+        combo_globe {
+            timeout-ms = <50>;
+            key-positions = <28 15>;
+            require-prior-idle-ms = <200>;
+            bindings = <&kp GLOBE>;
+        };
     };
 
     keymap {
