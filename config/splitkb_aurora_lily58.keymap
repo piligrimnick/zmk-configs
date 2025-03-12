@@ -167,8 +167,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_B)  // right-hand HRMs
         // CAPS
         combo_caps {
             timeout-ms = <50>;
-            key-positions = <28 15>;
-            require-prior-idle-ms = <100>;
+            key-positions = <28 29>;
             bindings = <&kp CAPS>;
         };
         combo_caps_2 {
