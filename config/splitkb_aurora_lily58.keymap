@@ -183,6 +183,12 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_B)  // right-hand HRMs
             require-prior-idle-ms = <100>;
             bindings = <&kp RET>;
         };
+        // Game-mode
+        combo_game {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&tog M2>;
+        };
     };
 
     keymap {
@@ -212,11 +218,11 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_B)  // right-hand HRMs
 
         M2_layer {
             bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans                                 &trans   &trans  &trans    &trans  &trans    &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                                 &trans   &trans  &trans    &trans  &trans    &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                                 &trans   &trans  &trans    &trans  &trans    &trans
-                &trans  &trans  &trans  &trans  &trans  &trans     &trans           &trans     &trans   &trans  &trans    &trans  &trans    &trans
-                                        &trans  &trans  &trans     &trans           &trans     &trans   &trans  &trans
+                &trans     &trans  &trans  &trans  &trans  &trans                                 &trans   &trans  &trans    &trans  &trans    &trans
+                &trans     &trans  &trans  &trans  &trans  &trans                                 &trans   &trans  &trans    &trans  &trans    &trans
+                &kp LSHFT  &kp A   &kp S   &kp D   &kp F   &trans                                 &trans   &kp J   &kp K     &kp L   &kp SEMI  &trans
+                &kp LCTRL  &trans  &trans  &trans  &trans  &trans     &trans           &trans     &trans   &trans  &trans    &trans  &trans    &kp RET
+                                           &trans  &kp RET &trans     &trans           &trans     &trans   &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
