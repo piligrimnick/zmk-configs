@@ -13,6 +13,7 @@
         label = "WS2812";
         gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH>;
         chain-length = <12>;
+        color-mapping = <LED_COLOR_ID_RED LED_COLOR_ID_GREEN LED_COLOR_ID_BLUE>;
         status = "okay";
     };
 };
