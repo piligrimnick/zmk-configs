@@ -23,6 +23,8 @@ include:
     shield: splitkb_aurora_lily58_right
   - board: nice_nano
     shield: splitkb_aurora_corne_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano
     shield: splitkb_aurora_corne_right
   - board: nrfmicro@1.3.0/nrf52840
