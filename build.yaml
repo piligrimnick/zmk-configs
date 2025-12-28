@@ -13,29 +13,31 @@
 #
 ---
 include:
-  - board: nice_nano
-    shield: lily58_left
-  - board: nice_nano
-    shield: lily58_right
-  - board: nice_nano
-    shield: splitkb_aurora_lily58_left
-  - board: nice_nano
-    shield: splitkb_aurora_lily58_right
-  - board: nice_nano
-    shield: splitkb_aurora_corne_left
-  - board: nice_nano
-    shield: splitkb_aurora_corne_right
+  # - board: nice_nano
+  #   shield: lily58_left
+  # - board: nice_nano
+  #   shield: lily58_right
+  # - board: nice_nano
+  #   shield: splitkb_aurora_lily58_left
+  # - board: nice_nano
+  #   shield: splitkb_aurora_lily58_right
+  # - board: nice_nano
+  #   shield: splitkb_aurora_corne_left
+  # - board: nice_nano
+  #   shield: splitkb_aurora_corne_right
   - board: nrfmicro@1.3.0/nrf52840
     shield: splitkb_aurora_corne_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nrfmicro@1.3.0/nrf52840
     shield: splitkb_aurora_corne_right
-  - board: nrfmicro@1.3.0/nrf52840
-    shield: lily58_left
-  - board: nrfmicro@1.3.0/nrf52840
-    shield: lily58_right
-  - board: nrfmicro@1.3.0/nrf52840
-    shield: splitkb_aurora_lily58_left
-  - board: nrfmicro@1.3.0/nrf52840
-    shield: splitkb_aurora_lily58_right
-  - board: nice_nano
-    shield: settings_reset
+  # - board: nrfmicro@1.3.0/nrf52840
+  #   shield: lily58_left
+  # - board: nrfmicro@1.3.0/nrf52840
+  #   shield: lily58_right
+  # - board: nrfmicro@1.3.0/nrf52840
+  #   shield: splitkb_aurora_lily58_left
+  # - board: nrfmicro@1.3.0/nrf52840
+  #   shield: splitkb_aurora_lily58_right
+  # - board: nice_nano
+  #   shield: settings_reset
