@@ -297,7 +297,7 @@
             //                                  |          |          |          |          |  |          |          |          |          |
             bindings = <
                 &kp TAB      &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI                &kp F10  &kp F1  &kp F2    &kp F3  &trans    &trans
-                &trans       &kp HYP_A  &kp HYP_S  &kp HYP_D  &kp HYP_F  &kp HYP_G                      &kp F11  &kp F4  &kp F5    &kp F6  &trans    &trans
+                &trans       &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD                &kp F11  &kp F4  &kp F5    &kp F6  &trans    &trans
                 &trans       &kp HYP_Z  &kp HYP_X  &kp HYP_C  &kp HYP_V  &kp HYP_B                      &kp F12  &kp F7  &kp F8    &kp F9  &trans    &trans
                                                               &trans     &ext_power EP_TOG &ext_power EP_ON    &ext_power EP_ON   &ext_power EP_TOG   &trans
             >;
