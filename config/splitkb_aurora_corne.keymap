@@ -48,9 +48,16 @@
 
 
 / {
-   chosen {
-      zmk,underglow = &led_strip;
-   };
+    ext_power {
+        compatible = "zmk,ext-power-generic";
+        label = "EXT_POWER";
+        control-gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
+    };
+
+    chosen {
+        zmk,underglow = &led_strip;
+        zmk,ext-power = &ext_power;
+    };
 };
 
 // timeout for tap-dance
