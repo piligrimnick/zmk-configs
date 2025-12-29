@@ -33,11 +33,11 @@
 // };
 
 
-/ {
-   chosen {
-      zmk,underglow = &led_strip;
-   };
-};
+// / {
+//    chosen {
+//       zmk,underglow = &led_strip;
+//    };
+// };
 
 // timeout for tap-dance
 #define TD_TIMEOUT         150
